@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio - Geovane Bornancin</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+   
+    <div class="pagina">
+
+        <header>
+                    
+            <ul class="nav">
+                <li class="nav-item"><a href="#sobre" class="nav-link">SOBRE</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link">PROJETOS</a></li>
+
+               
+            </ul>
+    
+          </header>
+
+
+        <ul>
+            
+            <div   class="titulo">
+                
+                <img src="icone1.png" alt="Foto Geovane">
+                <h1>Geovane Bornancin</h1>
+                <h2>Desenvolvedor<br>19 anos</h2>
+               
+                
+                
+            </div>
+    
+        </ul>
+    
+       
+       
+        <div id="sobre" class="linha"></div>
+    
+        
+       
+        
+                
+                <div  class="conteudo">
+                       
+                        <h1 >Sobre mim</h1>
+                        <p > Meu nome é Geovane Tadeu de Araujo Bornancin, 
+                            sou nativo do Brasil, nasci no dia 19 de agosto 
+                            de 2003 em Matinhos-Paraná, onde atualmente vivo.
+                            Estou no 6º período de Tecnologia em Análise e Desenvolvimento 
+                            de Sistemas no <a href="https://ifpr.edu.br/campus-paranagua/" class="ifprlink" target="_blank">
+                            Instituto Federal do Paraná - Campus Paranaguá</a> .</p>   
+                </div>
+                
+                
+                
+        
+        
+        <div class="linha"></div>
+        
+        <ul>
+    
+                <div id="projetos" class="projetos">
+                    <h1>Projetos</h1>
+                    
+                    <h1 style="margin-top: 50px; margin-bottom:20px; font-size: 50px;">SportData</h1>
+                
+                    <div class="sportdata">
+                        
+                        <a href="https://github.com/GeBornancin/SportData.git" class="sportdatalink" target="_blank">
+                        
+                            <video src="SportData.mp4" autoplay loop> </video>
+
+                            <p> O SportData é um aplicativo para desktop desenvolvido em JAVA,
+                            tendo como objetivo ser uma ferramenta para otimizar o controle de
+                            empréstimos,  uma plataforma simples e amigável para que os usuários 
+                            tenham uma experiência satisfatória.
+                            </p>
+                        </a>
+                    </div>
+                </div>   
+
+                    <div class="linha2"></div>
+                    
+                <div class="projetos"> 
+
+                    <h1 style="margin-top: 50px; margin-bottom:20px; font-size: 50px;">App-Escola</h1>
+                    
+                    <div class="escola">
+
+                        <a href="https://github.com/GeBornancin/APP-ESCOLA.git" class="escolalink" target=" blank">
+
+                            <video src="escola.mp4" autoplay loop></video>  
+                            
+                            <p> O APP-ESCOLA é um aplicativo para desktop desenvolvido em JAVA,
+                                tendo como objetivo ser uma ferramenta de controle de informações para escolas.
+
+                            </p>
+                        </a>
+                    </div>
+                </div>                    
+
+        </ul>  
+        
+        <ul>    
+            
+            <footer>
+                <div class="github">
+                    
+                    <a href="https://github.com/GeBornancin" target="_blank">
+                        <img  src="github(1).png" alt="Link para o Github de Geovane">
+                    </a>
+                
+                </div>
+            
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/geovane-bornancin-35a035217/" target="_blank">
+                        <img  src="linkedin(1).png" alt="Link para o Linkedin de Geovane">
+                        
+                    </a>
+                   
+                </div>
+                <div class="contato">
+
+                    <h1 onclick="copyToClipboard('gebornancin@gmail.com')">gebornancin@gmail.com</h1>
+                </div>
+             </footer>
+        </ul> 
+        
+    </div>
+    <script>
+        function copyToClipboard() {
+          // Copia o texto para a área de transferência
+          const email = "gebornancin@gmail.com";
+          navigator.clipboard.writeText(email);
+      
+          // Exibe a mensagem de confirmação
+          const confirmationMessage = document.createElement("div");
+          confirmationMessage.innerText = "E-mail copiado para a área de transferência!";
+          confirmationMessage.style.position = "fixed";
+          confirmationMessage.style.bottom = "20px";
+          confirmationMessage.style.left = "50%";
+          confirmationMessage.style.transform = "translateX(-50%)";
+          confirmationMessage.style.padding = "10px";
+          confirmationMessage.style.backgroundColor = "black";
+          confirmationMessage.style.color = "white";
+          confirmationMessage.style.borderRadius = "5px";
+          confirmationMessage.style.opacity = "0.8";
+          confirmationMessage.style.zIndex = "9999";
+          document.body.appendChild(confirmationMessage);
+      
+          // Remove a mensagem de confirmação após 2 segundos
+          setTimeout(() => {
+            confirmationMessage.remove();
+          }, 2000);
+        }
+      </script>
+
+</body>
+
+</html>

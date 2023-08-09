@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+html{
+    margin: 0; 
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+   
+    /* font-family: 'Dosis', sans-serif; */
+    display: flex;
+    overflow-y: scroll;
+}
+
+.pagina{
+
+  width: 100%; 
+  height: 100%; 
+  margin: 0 auto; 
+ 
+}
+
+
+.ifprlink{
+    text-decoration: none;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8997d1;
+    position: fixed;
+    font-family: 'Dosis', sans-serif;
+    text-decoration:none;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+}
+
+.nav {
+  
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  text-decoration:none;
+
+}
+
+.nav-item {
+  margin: 0 10px;
+  transition: transform 0.5s ease;
+}
+.nav-item:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  
+}
+.nav-link {
+  color: white;
+  text-decoration:none;
+  font-size: 30px;
+  font-weight: 700;
+  
+}
+.nav-link:hover{
+
+  color: #e3f6ad;
+}
+.titulo{
+    align-items: center;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    
+}
+
+.titulo h1{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    margin-top: -180px;
+    margin-left: 50px;
+    font-size: 80px;
+    
+}
+
+.titulo h2{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 20px;
+    height: 200px;
+}
+.titulo img{
+    width: 250px;
+    height: 250px;
+    margin-right: 920px;
+}
+
+.conteudo {
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:0 auto;
+    height: 350px;
+    background-color: #b1bfffb2;
+    margin-top: 100px;
+    width: 650px;
+    border-radius: 50px 5px 50px 5px;
+}
+.conteudo h1{
+
+    width: 300px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.conteudo p{
+    text-align: center;
+    font-size: 25px;
+    width: 600px;
+    margin-top: 50px;
+}
+
+.projetos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin:0 auto;
+    width: 300px;
+}
+
+.projetos h1{
+    text-align: center;
+    width: 300px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    margin-top: 100px;
+    font-size: 80px;
+    
+}
+
+.sportdata {
+
+    border: 10px solid rgba(94, 83, 176, 0.488);
+    background-color: #8998d180;
+    height: 470px;
+    width: 1060px;
+    border-radius: 50px 0px 50px 50px;
+    transition: all 0.3s ease;
+    
+}
+  
+.sportdatalink{
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+ 
+.sportdata video{
+
+  width:770px; /* ajuste o tamanho da imagem conforme necessário */
+  height: 470px;
+  object-fit:fill;
+  border-radius: 42px 0px 20px 42px;
+}
+  
+.sportdata p{
+
+  height: 200px;
+  width: 260px;
+  margin-top: -400px;
+  margin-left: 800px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000;
+}
+
+.sportdata:hover{
+  transform: scale(1.02);
+  transition: transform 0.5s ease;
+  border-right-color: rgb(210, 253, 196);
+  border-bottom-color: rgb(210, 253, 196);
+
+}
+
+.escola{
+
+  border: 10px solid rgba(94, 83, 176, 0.488);
+  background-color: #8998d180;
+  height: 470px;
+  width: 1060px;
+  border-radius: 0px 50px 50px 50px;
+  transition: all 0.3s ease;
+
+}
+
+.escolalink{
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.escola video{
+
+  width:770px; /* ajuste o tamanho da imagem conforme necessário */
+  height: 470px;
+  object-fit:fill;
+  margin-left: 290px;
+  border-radius: 0px 42px 42px 20px;
+}
+
+.escola p {
+  height: 200px;
+  width: 260px;
+  margin-top: -400px;
+  margin-left: 20px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000;
+}
+
+.escola:hover{
+  transform: scale(1.02);
+  transition: transform 0.5s ease;
+  border-left-color: rgb(210, 253, 196);
+  border-bottom-color: rgb(210, 253, 196);
+
+}
+
+.contatos{
+  height: 400px;
+  width: 800px;
+  margin-top: 100px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  
+}
+.contatos h1{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+footer {
+  position:relative;
+  bottom: 0;
+  background-color: #8997d1;
+  width: 100%;
+  height: 100px;    
+  text-align: center;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.github{
+  
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+.linkedin{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.github img, .linkedin img{
+  height: 50px;
+  transition: transform 0.5s ease;
+}
+.contato {
+  margin-right:0px;
+  margin-top: -40px;
+  text-align:center;
+  font-size: large;
+  font-weight: 1000;
+ 
+}
+.contato h1{
+  cursor: pointer;
+  
+}
+
+.contato:hover{
+
+  color: rgb(210, 253, 196);
+  text-decoration: underline;
+  border-radius: 25px 25px 25px 25px;
+
+}
+
+.linkedin img:hover{
+  box-shadow: 0 0 5px rgb(210, 253, 196);
+  border-radius: 25px 25px 25px 25px;
+  transform: scale(1.3);
+  transition: transform 0.5s ease;
+}
+
+.github img:hover{
+
+  box-shadow: 0 0 5px rgb(210, 253, 196);
+  border-radius: 25px 25px 25px 25px;
+  transform: scale(1.3);
+  transition: transform 0.5s ease;
+}
+
+
+.linha {
+  align-items: center;
+  margin-top: 150px;
+  padding: 0px 0px 0px 0px;
+  width: 1000%;
+  border-bottom: 100px solid #8997d1; /* Uma linha sólida preta de 1px na parte inferior do elemento */
+}
+
+.linha2{
+  align-items: center;
+  margin-top: 50px;
+  padding: 0px 0px 0px 0px;
+  width: 1000%;
+  border-bottom: 10px solid#8997d1;
+}
+
+* {
+    scrollbar: width 20px;;
+    scrollbar-color: #8997d1 rgb(210, 253, 196);
+    
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8997d1;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(128, 128, 128, 0.32);
+}
+
+
